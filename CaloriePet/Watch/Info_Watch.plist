@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>CaloriePet 需要访问您的健康数据来计算宠物经验值。</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>CaloriePet 需要访问您的健康数据来计算宠物经验值。</string>
+</dict>
+</plist>

@@ -6,20 +6,95 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BC6554B92FB4CED200D1C11F /* CaloriePetWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BC6554B82FB4CED200D1C11F /* CaloriePetWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC6554BA2FB4CED200D1C11F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC65546A2FB4CA2D00D1C11F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6554B72FB4CED200D1C11F;
+			remoteInfo = "CaloriePetWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC6554C62FB4CED500D1C11F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BC6554B92FB4CED200D1C11F /* CaloriePetWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BC6554722FB4CA2D00D1C11F /* CaloriePet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaloriePet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6554B32FB4CED200D1C11F /* CaloriePetWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaloriePetWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6554B82FB4CED200D1C11F /* CaloriePetWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CaloriePetWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BC6554B02FB4CE1C00D1C11F /* Exceptions for "CaloriePet" folder in "CaloriePet" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				Watch/CaloriePetWatchApp.swift,
+				Watch/ContentView_Watch.swift,
+			);
+			target = BC6554712FB4CA2D00D1C11F /* CaloriePet */;
+		};
+		BC6554D72FB4D17600D1C11F /* Exceptions for "CaloriePet" folder in "CaloriePetWatch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Shared/AchievementSystem.swift,
+				Shared/DebugTools.swift,
+				Shared/HealthKitManager.swift,
+				Shared/NotificationManager.swift,
+				Shared/Pet.swift,
+				Shared/PetAssets.swift,
+				Shared/PetInteraction.swift,
+				Shared/PetViewModel.swift,
+				Shared/WatchConnectivityManager.swift,
+				Watch/ContentView_Watch.swift,
+				Watch/Info_Watch.plist,
+			);
+			target = BC6554B72FB4CED200D1C11F /* CaloriePetWatch Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BC6554742FB4CA2D00D1C11F /* CaloriePet */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BC6554B02FB4CE1C00D1C11F /* Exceptions for "CaloriePet" folder in "CaloriePet" target */,
+				BC6554D72FB4D17600D1C11F /* Exceptions for "CaloriePet" folder in "CaloriePetWatch Watch App" target */,
+			);
 			path = CaloriePet;
+			sourceTree = "<group>";
+		};
+		BC6554BC2FB4CED200D1C11F /* CaloriePetWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "CaloriePetWatch Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC65546F2FB4CA2D00D1C11F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6554B52FB4CED200D1C11F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				BC6554742FB4CA2D00D1C11F /* CaloriePet */,
+				BC6554BC2FB4CED200D1C11F /* CaloriePetWatch Watch App */,
 				BC6554732FB4CA2D00D1C11F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				BC6554722FB4CA2D00D1C11F /* CaloriePet.app */,
+				BC6554B32FB4CED200D1C11F /* CaloriePetWatch.app */,
+				BC6554B82FB4CED200D1C11F /* CaloriePetWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +148,47 @@
 			productReference = BC6554722FB4CA2D00D1C11F /* CaloriePet.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC6554B22FB4CED200D1C11F /* CaloriePetWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6554C72FB4CED500D1C11F /* Build configuration list for PBXNativeTarget "CaloriePetWatch" */;
+			buildPhases = (
+				BC6554B12FB4CED200D1C11F /* Resources */,
+				BC6554C62FB4CED500D1C11F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC6554BB2FB4CED200D1C11F /* PBXTargetDependency */,
+			);
+			name = CaloriePetWatch;
+			packageProductDependencies = (
+			);
+			productName = CaloriePetWatch;
+			productReference = BC6554B32FB4CED200D1C11F /* CaloriePetWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		BC6554B72FB4CED200D1C11F /* CaloriePetWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6554C32FB4CED500D1C11F /* Build configuration list for PBXNativeTarget "CaloriePetWatch Watch App" */;
+			buildPhases = (
+				BC6554B42FB4CED200D1C11F /* Sources */,
+				BC6554B52FB4CED200D1C11F /* Frameworks */,
+				BC6554B62FB4CED200D1C11F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC6554BC2FB4CED200D1C11F /* CaloriePetWatch Watch App */,
+			);
+			name = "CaloriePetWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "CaloriePetWatch Watch App";
+			productReference = BC6554B82FB4CED200D1C11F /* CaloriePetWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -81,6 +200,12 @@
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					BC6554712FB4CA2D00D1C11F = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					BC6554B22FB4CED200D1C11F = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					BC6554B72FB4CED200D1C11F = {
 						CreatedOnToolsVersion = 26.5;
 					};
 				};
@@ -100,12 +225,28 @@
 			projectRoot = "";
 			targets = (
 				BC6554712FB4CA2D00D1C11F /* CaloriePet */,
+				BC6554B22FB4CED200D1C11F /* CaloriePetWatch */,
+				BC6554B72FB4CED200D1C11F /* CaloriePetWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BC6554702FB4CA2D00D1C11F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6554B12FB4CED200D1C11F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6554B62FB4CED200D1C11F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +263,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC6554B42FB4CED200D1C11F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC6554BB2FB4CED200D1C11F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC6554B72FB4CED200D1C11F /* CaloriePetWatch Watch App */;
+			targetProxy = BC6554BA2FB4CED200D1C11F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BC65547B2FB4CA2F00D1C11F /* Debug */ = {
@@ -251,11 +407,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CaloriePet/CaloriePet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z467U2S25J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CaloriePet/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Privacy - Health Share Usage Description";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Privacy - Health Update Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,6 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linzhibing.CaloriePet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -283,11 +444,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CaloriePet/CaloriePet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z467U2S25J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CaloriePet/Info.plist;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Privacy - Health Share Usage Description";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Privacy - Health Update Usage Description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,6 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linzhibing.CaloriePet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -307,6 +473,110 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC6554C42FB4CED500D1C11F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CaloriePetWatch Watch App/CaloriePetWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z467U2S25J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/CaloriePet/Watch/Info_Watch.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CaloriePetWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzhibing.CaloriePetWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		BC6554C52FB4CED500D1C11F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CaloriePetWatch Watch App/CaloriePetWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z467U2S25J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/CaloriePet/Watch/Info_Watch.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CaloriePetWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzhibing.CaloriePetWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		BC6554C82FB4CED500D1C11F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z467U2S25J;
+				INFOPLIST_KEY_CFBundleDisplayName = CaloriePetWatch;
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzhibing.CaloriePetWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC6554C92FB4CED500D1C11F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z467U2S25J;
+				INFOPLIST_KEY_CFBundleDisplayName = CaloriePetWatch;
+				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linzhibing.CaloriePetWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -327,6 +597,24 @@
 			buildConfigurations = (
 				BC65547E2FB4CA2F00D1C11F /* Debug */,
 				BC65547F2FB4CA2F00D1C11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6554C32FB4CED500D1C11F /* Build configuration list for PBXNativeTarget "CaloriePetWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6554C42FB4CED500D1C11F /* Debug */,
+				BC6554C52FB4CED500D1C11F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6554C72FB4CED500D1C11F /* Build configuration list for PBXNativeTarget "CaloriePetWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6554C82FB4CED500D1C11F /* Debug */,
+				BC6554C92FB4CED500D1C11F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
