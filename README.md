@@ -24,7 +24,7 @@ CaloriePet 是一个**把健康数据变成宠物养成游戏**的开源项目�
 
 ## 🎬 效果预览
 
-![宠物展示](https://user-images.githubusercontent.com/placeholder/pet-demo.png)
+![宠物展示](./watch-demo.png)
 
 *一只水系宠物"潮滴"，从幼年期到完全体的成长过程*
 
@@ -83,15 +83,25 @@ open CaloriePet/CaloriePet.xcodeproj
 
 ## 🏗️ 项目结构
 CaloriePet/ 
+
 ├── 📁 Shared/ # 核心逻辑（iOS + Watch 共用） 
+
 │ ├── Pet.swift # 宠物模型、家族定义、进化系统 
+
 │ ├── PetViewModel.swift # 业务逻辑、经验值计算 
+
 │ ├── HealthKitManager.swift # 健康数据读取 
+
 │ └── WatchConnectivityManager.swift # 双端同步 
+
 ├── 📁 iPhone/ # iPhone 专属 UI 
+
 │ └── ContentView.swift 
+
 ├── 📁 Watch/ # Apple Watch 专属 UI 
+
 │ └── ContentView_Watch.swift 
+
 └── 📁 CaloriePet/ # 项目配置
 
 
