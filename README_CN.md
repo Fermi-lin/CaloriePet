@@ -82,28 +82,19 @@ open CaloriePet/CaloriePet.xcodeproj
 ---
 
 ## 🏗️ 项目结构
+```
 CaloriePet/ 
-
 ├── 📁 Shared/ # 核心逻辑（iOS + Watch 共用） 
-
 │ ├── Pet.swift # 宠物模型、家族定义、进化系统 
-
 │ ├── PetViewModel.swift # 业务逻辑、经验值计算 
-
 │ ├── HealthKitManager.swift # 健康数据读取 
-
 │ └── WatchConnectivityManager.swift # 双端同步 
-
 ├── 📁 iPhone/ # iPhone 专属 UI 
-
 │ └── ContentView.swift 
-
 ├── 📁 Watch/ # Apple Watch 专属 UI 
-
 │ └── ContentView_Watch.swift 
-
 └── 📁 CaloriePet/ # 项目配置
-
+```
 
 ---
 
