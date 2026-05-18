@@ -84,6 +84,7 @@ And you can quickly launch a "fitness pet-raising" feature.
 ---
 
 ## 🏗️ Project Structure
+```
 CaloriePet/ 
 ├── 📁 Shared/ # Core logic (shared by iOS + Watch) 
 │ ├── Pet.swift # Pet model, family definitions, evolution 
@@ -95,6 +96,7 @@ CaloriePet/
 ├── 📁 Watch/ # Apple Watch UI 
 │ └── ContentView_Watch.swift 
 └── 📁 CaloriePet/ # Project config
+```
 ---
 
 ## 🎨 Customize Your Pet (5-min Guide)
